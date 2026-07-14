@@ -20,7 +20,21 @@ container_1.addEventListener('mousemove',(event)=>{
         }
     }, 400);
     insect_legs_movement()
-    
+})
+
+container_1.addEventListener('touchmove',(event)=>{
+
+    setTimeout(() => {
+        let elem_x_calc=0
+        let elem_y_calc=0
+        for (const element of insect_list) {
+            element.style.left=`${event.clientX-elem_x_calc}px`
+            element.style.top=`${event.clientY-elem_y_calc}px`  
+            elem_x_calc+=30
+            elem_y_calc+=30
+        }
+    }, 400);
+    insect_legs_movement()  
 })
 
 
