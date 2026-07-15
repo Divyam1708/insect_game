@@ -22,8 +22,8 @@ body {
     position: absolute;
     transition-duration: 1s;
 }
+
 .insect_head{
-    background-color: rgb(0, 128, 255);
     width: 20px;
     aspect-ratio: 1/1;
     border: 1px solid;
@@ -47,16 +47,3 @@ body {
     z-index: 1;
     transition-duration: 50ms;
 }
-
-/* .leg_1{
-}
-.leg_2{
-}
-.leg_3{
-}
-.leg_4{
-}
-.leg_5{
-}
-.leg_6{
-} */
