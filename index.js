@@ -43,7 +43,17 @@ container_1.addEventListener('click',(event)=>{
 })
 
 // INSECT MOVEMENT APPLIER
+
+let top_setter=0
+let left_setter=0
+let size_push=0
 container_1.addEventListener('mousemove',(event)=>{
+    for (let index = 0; index < insect_list.length; index++) {
+        const element = insect_list[index];
+            element.style.top=`${event.clientY-size_push}px`
+            element.style.left=`${event.clientX-size_push}px`
+    }
+
     insect_legs_movement()
 })
 
